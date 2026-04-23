@@ -14,6 +14,7 @@ function WarehouseForm({ initialData, onClose, onSubmit }: {
     })
 
 
+    console.log(watch())
 
     useEffect(() => {
         reset(initialData || {})

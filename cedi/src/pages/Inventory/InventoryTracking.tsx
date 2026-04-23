@@ -78,14 +78,14 @@ function InventoryTracking() {
     }
 
     const handleSave = (formData: TrackingForm) => {
-
+console.log('handleSave llamado', formData)
         if (selected) {
             const updated = data.map(p => p.id === selected.id ? { ...formData, id: selected.id } : p)
 
             setData(updated)
         } else {
-            const newProduct = { ...formData, id: Date.now() }
-            setData([...data, newProduct])
+            const newMove = { ...formData, id: Date.now() }
+            setData([...data, newMove])
         }
         setShowForm(false)
         setSelected(null)
@@ -96,7 +96,7 @@ function InventoryTracking() {
         <div className="p-6">
             <div className="bg-white rounded-lg shadow p-6">
                 <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-2xl font-bold text-gray-800">Lista de Productos</h1>
+                    <h1 className="text-2xl font-bold text-gray-800">Lista de Movimientos</h1>
                     <button
                         onClick={handleCreate}
                         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
