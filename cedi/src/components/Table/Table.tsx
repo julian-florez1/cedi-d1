@@ -15,13 +15,13 @@ function Table<T>({ data, columns }: Readonly<TableProps<T>>) {
     })
 
     return (
-        <div>
-            <table>
-                <thead>
+        <div className="overflow-x-auto shadow">
+            <table className="w-full text-sm text-left text-gray-700">
+                <thead className="bg-gray-800 text-white uppercase text-xs">
                     {table.getHeaderGroups().map(headerGroup => (
                         <tr key={headerGroup.id}>
                             {headerGroup.headers.map(header => (
-                                <th key={header.id}>
+                                <th key={header.id} className="px-4 py-3">
                                     {header.isPlaceholder
                                         ? null
                                         : flexRender(
@@ -34,11 +34,14 @@ function Table<T>({ data, columns }: Readonly<TableProps<T>>) {
                     ))}
                 </thead>
                 <tbody>
-                    {table.getRowModel().rows.map(row => (
-                        <tr key={row.id}>
+                    {table.getRowModel().rows.map((row, index) => (
+                        <tr
+                            key={row.id}
+                            className={`border-b ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-blue-50 transition-colors`}
+                        >
                             {row.getVisibleCells().map(cell => (
-                                <td key={cell.id}>
-                                    {cell.getValue() as string}
+                                <td key={cell.id} className="px-4 py-3">
+                                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                 </td>
                             ))}
                         </tr>

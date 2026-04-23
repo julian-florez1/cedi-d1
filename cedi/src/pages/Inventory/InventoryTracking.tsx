@@ -1,44 +1,48 @@
 import type { CellContext } from "@tanstack/react-table";
-import dataProd from "../../../public/mock_data/productos.json";
+import movimientoInv from "../../../public/mock_data/movimientos_inventario.json";
 import Table from "../../components/Table/Table";
-import ProductForm from "./ProductForm";
+import type { InventoryTracking, TrackingForm } from "./InventoryTrackingType";
 import { useState } from "react";
-import type { Producto, ProductoForm } from "./ProductType";
+import InventoryTrackForm from "./InventoryTrackForm";
 
 
 
-function Products() {
 
-    const productos = dataProd as Producto[];
-    const [data, setData] = useState(productos)
+function InventoryTracking() {
+    const dataMovimiento = movimientoInv as InventoryTracking[];
+    const [data, setData] = useState(dataMovimiento)
     const [formKey, setFormKey] = useState(0)
     const [showForm, setShowForm] = useState(false)
-    const [selected, setSelected] = useState<Producto | null>(null)
+    const [selected, setSelected] = useState<InventoryTracking | null>(null)
     const columns = [
         {
-            header: 'ID',
-            accessorKey: 'id'
+            header: 'ID Producto',
+            accessorKey: 'productoId'
         },
         {
-            header: 'Nombre',
-            accessorKey: 'nombre'
-        },
-        {
-            header: 'Precio Unitario',
-            accessorKey: 'precio'
+            header: 'Tipo Movimiento',
+            accessorKey: 'tipo'
         },
         {
             header: 'Cantidad',
             accessorKey: 'cantidad'
         },
         {
-            header: 'Proveedor',
-            accessorKey: 'proveedor'
+            header: 'Bodega Origen',
+            accessorKey: 'bodegaOrigenId'
+        },
+        {
+            header: 'Bodega Destino',
+            accessorKey: 'bodegaDestinoId'
+        },
+        {
+            header: 'Fecha',
+            accessorKey: 'fecha'
         },
         {
             id: 'acciones',
             header: 'Acciones',
-            cell: ({ row }: CellContext<Producto, unknown>) => (
+            cell: ({ row }: CellContext<InventoryTracking, unknown>) => (
                 <div className="flex gap-2">
                     <button
                         onClick={() => handleEdit(row.original)}
@@ -57,8 +61,8 @@ function Products() {
         }
     ];
 
-    const handleEdit = (producto: Producto) => {
-        setSelected(producto)
+    const handleEdit = (invTrack: InventoryTracking) => {
+        setSelected(invTrack)
         setShowForm(true)
         setFormKey(prev => prev + 1)
     }
@@ -73,11 +77,11 @@ function Products() {
         setFormKey(prev => prev + 1)
     }
 
-    const handleSave = (formData: ProductoForm) => {
-
+    const handleSave = (formData: TrackingForm) => {
 
         if (selected) {
             const updated = data.map(p => p.id === selected.id ? { ...formData, id: selected.id } : p)
+
             setData(updated)
         } else {
             const newProduct = { ...formData, id: Date.now() }
@@ -87,6 +91,7 @@ function Products() {
         setSelected(null)
     }
 
+
     return (
         <div className="p-6">
             <div className="bg-white rounded-lg shadow p-6">
@@ -95,10 +100,10 @@ function Products() {
                     <button
                         onClick={handleCreate}
                         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
-                    > + Crear producto</button>
+                    > + Registrar Movimiento</button>
                 </div>
                 {showForm && (
-                    <ProductForm
+                    <InventoryTrackForm
                         key={formKey}
                         initialData={selected}
                         onClose={() => setShowForm(false)}
@@ -111,7 +116,4 @@ function Products() {
     )
 }
 
-
-export default Products
-
-
+export default InventoryTracking

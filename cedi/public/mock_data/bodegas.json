@@ -1,17 +1,106 @@
-[
-  { "id": 1, "nombre": "Bodega Central Bogotá", "ubicacion": "Bogotá", "capacidad": 5000, "responsable": "Carlos Pérez" },
-  { "id": 2, "nombre": "Bodega Norte Bogotá", "ubicacion": "Bogotá Norte", "capacidad": 3000, "responsable": "Laura Gómez" },
-  { "id": 3, "nombre": "Bodega Sur Bogotá", "ubicacion": "Bogotá Sur", "capacidad": 2800, "responsable": "Andrés Torres" },
-  { "id": 4, "nombre": "Bodega Medellín Centro", "ubicacion": "Medellín", "capacidad": 4000, "responsable": "Juliana Ríos" },
-  { "id": 5, "nombre": "Bodega Medellín Norte", "ubicacion": "Medellín Norte", "capacidad": 2500, "responsable": "Mateo López" },
-  { "id": 6, "nombre": "Bodega Cali Principal", "ubicacion": "Cali", "capacidad": 4200, "responsable": "Diana Martínez" },
-  { "id": 7, "nombre": "Bodega Cali Sur", "ubicacion": "Cali Sur", "capacidad": 2600, "responsable": "Felipe Castro" },
-  { "id": 8, "nombre": "Bodega Barranquilla", "ubicacion": "Barranquilla", "capacidad": 3500, "responsable": "Sofía Herrera" },
-  { "id": 9, "nombre": "Bodega Cartagena", "ubicacion": "Cartagena", "capacidad": 3000, "responsable": "Camilo Vargas" },
-  { "id": 10, "nombre": "Bodega Bucaramanga", "ubicacion": "Bucaramanga", "capacidad": 2700, "responsable": "Paula Ramírez" },
-  { "id": 11, "nombre": "Bodega Pereira", "ubicacion": "Pereira", "capacidad": 2400, "responsable": "Jorge Castillo" },
-  { "id": 12, "nombre": "Bodega Cúcuta", "ubicacion": "Cúcuta", "capacidad": 2200, "responsable": "Natalia Peña" },
-  { "id": 13, "nombre": "Bodega Ibagué", "ubicacion": "Ibagué", "capacidad": 2000, "responsable": "Sebastián Ortiz" },
-  { "id": 14, "nombre": "Bodega Villavicencio", "ubicacion": "Villavicencio", "capacidad": 2100, "responsable": "Valentina León" },
-  { "id": 15, "nombre": "Bodega Pasto", "ubicacion": "Pasto", "capacidad": 1900, "responsable": "Daniela Muñoz" }
+[{
+    "id": 1,
+    "nombre": "Bodega Central Bogotá",
+    "ubicacion": "Bogotá",
+    "capacidad": 5000,
+    "responsable": "Carlos Pérez"
+  },
+  {
+    "id": 2,
+    "nombre": "Bodega Norte Bogotá",
+    "ubicacion": "Bogotá Norte",
+    "capacidad": 3000,
+    "responsable": "Laura Gómez"
+  },
+  {
+    "id": 3,
+    "nombre": "Bodega Sur Bogotá",
+    "ubicacion": "Bogotá Sur",
+    "capacidad": 2800,
+    "responsable": "Andrés Torres"
+  },
+  {
+    "id": 4,
+    "nombre": "Bodega Medellín Centro",
+    "ubicacion": "Medellín",
+    "capacidad": 4000,
+    "responsable": "Juliana Ríos"
+  },
+  {
+    "id": 5,
+    "nombre": "Bodega Medellín Norte",
+    "ubicacion": "Medellín Norte",
+    "capacidad": 2500,
+    "responsable": "Mateo López"
+  },
+  {
+    "id": 6,
+    "nombre": "Bodega Cali Principal",
+    "ubicacion": "Cali",
+    "capacidad": 4200,
+    "responsable": "Diana Martínez"
+  },
+  {
+    "id": 7,
+    "nombre": "Bodega Cali Sur",
+    "ubicacion": "Cali Sur",
+    "capacidad": 2600,
+    "responsable": "Felipe Castro"
+  },
+  {
+    "id": 8,
+    "nombre": "Bodega Barranquilla",
+    "ubicacion": "Barranquilla",
+    "capacidad": 3500,
+    "responsable": "Sofía Herrera"
+  },
+  {
+    "id": 9,
+    "nombre": "Bodega Cartagena",
+    "ubicacion": "Cartagena",
+    "capacidad": 3000,
+    "responsable": "Camilo Vargas"
+  },
+  {
+    "id": 10,
+    "nombre": "Bodega Bucaramanga",
+    "ubicacion": "Bucaramanga",
+    "capacidad": 2700,
+    "responsable": "Paula Ramírez"
+  },
+  {
+    "id": 11,
+    "nombre": "Bodega Pereira",
+    "ubicacion": "Pereira",
+    "capacidad": 2400,
+    "responsable": "Jorge Castillo"
+  },
+  {
+    "id": 12,
+    "nombre": "Bodega Cúcuta",
+    "ubicacion": "Cúcuta",
+    "capacidad": 2200,
+    "responsable": "Natalia Peña"
+  },
+  {
+    "id": 13,
+    "nombre": "Bodega Ibagué",
+    "ubicacion": "Ibagué",
+    "capacidad": 2000,
+    "responsable": "Sebastián Ortiz"
+  },
+  {
+    "id": 14,
+    "nombre": "Bodega Villavicencio",
+    "ubicacion": "Villavicencio",
+    "capacidad": 2100,
+    "responsable": "Valentina León"
+  },
+  {
+    "id": 15,
+    "nombre": "Bodega Pasto",
+    "ubicacion": "Pasto",
+    "capacidad": 1900,
+    "responsable": "Daniela Muñoz"
+  }
 ]

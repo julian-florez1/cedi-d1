@@ -1,17 +1,136 @@
-[
-  { "id": 1, "productoId": 1, "tipo": "entrada", "cantidad": 100, "bodegaOrigenId": null, "bodegaDestinoId": 1, "fecha": "2026-04-01T08:30:00Z" },
-  { "id": 2, "productoId": 2, "tipo": "entrada", "cantidad": 80, "bodegaOrigenId": null, "bodegaDestinoId": 1, "fecha": "2026-04-01T09:00:00Z" },
-  { "id": 3, "productoId": 1, "tipo": "salida", "cantidad": 20, "bodegaOrigenId": 1, "bodegaDestinoId": null, "fecha": "2026-04-02T10:15:00Z" },
-  { "id": 4, "productoId": 3, "tipo": "entrada", "cantidad": 50, "bodegaOrigenId": null, "bodegaDestinoId": 2, "fecha": "2026-04-02T11:00:00Z" },
-  { "id": 5, "productoId": 4, "tipo": "entrada", "cantidad": 120, "bodegaOrigenId": null, "bodegaDestinoId": 2, "fecha": "2026-04-03T08:45:00Z" },
-  { "id": 6, "productoId": 2, "tipo": "salida", "cantidad": 30, "bodegaOrigenId": 1, "bodegaDestinoId": null, "fecha": "2026-04-03T12:20:00Z" },
-  { "id": 7, "productoId": 5, "tipo": "entrada", "cantidad": 60, "bodegaOrigenId": null, "bodegaDestinoId": 3, "fecha": "2026-04-04T09:10:00Z" },
-  { "id": 8, "productoId": 5, "tipo": "transferencia", "cantidad": 15, "bodegaOrigenId": 3, "bodegaDestinoId": 1, "fecha": "2026-04-05T14:00:00Z" },
-  { "id": 9, "productoId": 6, "tipo": "entrada", "cantidad": 40, "bodegaOrigenId": null, "bodegaDestinoId": 3, "fecha": "2026-04-05T08:00:00Z" },
-  { "id": 10, "productoId": 7, "tipo": "entrada", "cantidad": 35, "bodegaOrigenId": null, "bodegaDestinoId": 4, "fecha": "2026-04-06T07:50:00Z" },
-  { "id": 11, "productoId": 7, "tipo": "salida", "cantidad": 10, "bodegaOrigenId": 4, "bodegaDestinoId": null, "fecha": "2026-04-06T16:30:00Z" },
-  { "id": 12, "productoId": 8, "tipo": "entrada", "cantidad": 25, "bodegaOrigenId": null, "bodegaDestinoId": 4, "fecha": "2026-04-07T10:00:00Z" },
-  { "id": 13, "productoId": 9, "tipo": "entrada", "cantidad": 90, "bodegaOrigenId": null, "bodegaDestinoId": 5, "fecha": "2026-04-07T09:30:00Z" },
-  { "id": 14, "productoId": 10, "tipo": "salida", "cantidad": 20, "bodegaOrigenId": 5, "bodegaDestinoId": null, "fecha": "2026-04-08T13:15:00Z" },
-  { "id": 15, "productoId": 11, "tipo": "transferencia", "cantidad": 25, "bodegaOrigenId": 6, "bodegaDestinoId": 2, "fecha": "2026-04-08T15:40:00Z" }
+[{
+    "id": 1,
+    "productoId": 1,
+    "tipo": "entrada",
+    "cantidad": 100,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 1,
+    "fecha": "2026-04-01T08:30:00Z"
+  },
+  {
+    "id": 2,
+    "productoId": 2,
+    "tipo": "entrada",
+    "cantidad": 80,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 1,
+    "fecha": "2026-04-01T09:00:00Z"
+  },
+  {
+    "id": 3,
+    "productoId": 1,
+    "tipo": "salida",
+    "cantidad": 20,
+    "bodegaOrigenId": 1,
+    "bodegaDestinoId": null,
+    "fecha": "2026-04-02T10:15:00Z"
+  },
+  {
+    "id": 4,
+    "productoId": 3,
+    "tipo": "entrada",
+    "cantidad": 50,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 2,
+    "fecha": "2026-04-02T11:00:00Z"
+  },
+  {
+    "id": 5,
+    "productoId": 4,
+    "tipo": "entrada",
+    "cantidad": 120,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 2,
+    "fecha": "2026-04-03T08:45:00Z"
+  },
+  {
+    "id": 6,
+    "productoId": 2,
+    "tipo": "salida",
+    "cantidad": 30,
+    "bodegaOrigenId": 1,
+    "bodegaDestinoId": null,
+    "fecha": "2026-04-03T12:20:00Z"
+  },
+  {
+    "id": 7,
+    "productoId": 5,
+    "tipo": "entrada",
+    "cantidad": 60,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 3,
+    "fecha": "2026-04-04T09:10:00Z"
+  },
+  {
+    "id": 8,
+    "productoId": 5,
+    "tipo": "transferencia",
+    "cantidad": 15,
+    "bodegaOrigenId": 3,
+    "bodegaDestinoId": 1,
+    "fecha": "2026-04-05T14:00:00Z"
+  },
+  {
+    "id": 9,
+    "productoId": 6,
+    "tipo": "entrada",
+    "cantidad": 40,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 3,
+    "fecha": "2026-04-05T08:00:00Z"
+  },
+  {
+    "id": 10,
+    "productoId": 7,
+    "tipo": "entrada",
+    "cantidad": 35,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 4,
+    "fecha": "2026-04-06T07:50:00Z"
+  },
+  {
+    "id": 11,
+    "productoId": 7,
+    "tipo": "salida",
+    "cantidad": 10,
+    "bodegaOrigenId": 4,
+    "bodegaDestinoId": null,
+    "fecha": "2026-04-06T16:30:00Z"
+  },
+  {
+    "id": 12,
+    "productoId": 8,
+    "tipo": "entrada",
+    "cantidad": 25,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 4,
+    "fecha": "2026-04-07T10:00:00Z"
+  },
+  {
+    "id": 13,
+    "productoId": 9,
+    "tipo": "entrada",
+    "cantidad": 90,
+    "bodegaOrigenId": null,
+    "bodegaDestinoId": 5,
+    "fecha": "2026-04-07T09:30:00Z"
+  },
+  {
+    "id": 14,
+    "productoId": 10,
+    "tipo": "salida",
+    "cantidad": 20,
+    "bodegaOrigenId": 5,
+    "bodegaDestinoId": null,
+    "fecha": "2026-04-08T13:15:00Z"
+  },
+  {
+    "id": 15,
+    "productoId": 11,
+    "tipo": "transferencia",
+    "cantidad": 25,
+    "bodegaOrigenId": 6,
+    "bodegaDestinoId": 2,
+    "fecha": "2026-04-08T15:40:00Z"
+  }
 ]

@@ -5,8 +5,8 @@ import "./sidenav.css";
 function SideNav() {
 
     return (
-        <div className="flex h-screen bg-gray-100">
-            <div className="hidden md:flex flex-col w-64 bg-gray-800">
+
+            <div className="hidden md:flex flex-col w-auto bg-gray-800">
                 <div className="flex items-center justify-center h-16 bg-gray-900">
                     <span className="text-white font-bold uppercase">D1 CEDI</span>
                 </div>
@@ -38,18 +38,15 @@ function SideNav() {
                             </svg>
                             Inventario
                         </Link>
+                        <Link to={'/inventoryTracking'} className="flex items-center px-4 py-2 mt-2 text-gray-100 hover:bg-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6 mr-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                            </svg>
+                            Movimientos Inventario
+                        </Link>
                     </nav>
                 </div>
             </div>
-
-            {/* <div className="flex flex-col flex-1 overflow-y-auto">
-                <div className="p-4">
-                    <h1 className="text-2xl font-bold">Welcome to my dashboard!</h1>
-                    <p className="mt-2 text-gray-600">This is an example dashboard using Tailwind CSS.</p>
-                </div>
-            </div> */}
-
-        </div>
     );
 }
 

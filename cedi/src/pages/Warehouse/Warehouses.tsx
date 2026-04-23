@@ -1,44 +1,45 @@
 import type { CellContext } from "@tanstack/react-table";
-import dataProd from "../../../public/mock_data/productos.json";
+import dataWarehouse from "../../../public/mock_data/bodegas.json";
 import Table from "../../components/Table/Table";
-import ProductForm from "./ProductForm";
+import WarehouseForm from "./WarehouseForm";
 import { useState } from "react";
-import type { Producto, ProductoForm } from "./ProductType";
+import type { Warehouse, WarehousesForm } from "./WarehouseType";
 
 
 
-function Products() {
+function Warehouses() {
 
-    const productos = dataProd as Producto[];
-    const [data, setData] = useState(productos)
+    const bodegas = dataWarehouse as Warehouse[];
+    const [data, setData] = useState(bodegas)
     const [formKey, setFormKey] = useState(0)
     const [showForm, setShowForm] = useState(false)
-    const [selected, setSelected] = useState<Producto | null>(null)
+    const [selected, setSelected] = useState<Warehouse | null>(null)
+
     const columns = [
         {
             header: 'ID',
             accessorKey: 'id'
         },
         {
-            header: 'Nombre',
+            header: 'Nombre Bodega',
             accessorKey: 'nombre'
         },
         {
-            header: 'Precio Unitario',
-            accessorKey: 'precio'
+            header: 'Ubicación ',
+            accessorKey: 'ubicacion'
         },
         {
-            header: 'Cantidad',
-            accessorKey: 'cantidad'
+            header: 'Capacidad',
+            accessorKey: 'capacidad'
         },
         {
-            header: 'Proveedor',
-            accessorKey: 'proveedor'
+            header: 'Responsable',
+            accessorKey: 'responsable'
         },
         {
             id: 'acciones',
             header: 'Acciones',
-            cell: ({ row }: CellContext<Producto, unknown>) => (
+            cell: ({ row }: CellContext<Warehouse, unknown>) => (
                 <div className="flex gap-2">
                     <button
                         onClick={() => handleEdit(row.original)}
@@ -57,8 +58,8 @@ function Products() {
         }
     ];
 
-    const handleEdit = (producto: Producto) => {
-        setSelected(producto)
+    const handleEdit = (bodega: Warehouse) => {
+        setSelected(bodega)
         setShowForm(true)
         setFormKey(prev => prev + 1)
     }
@@ -73,11 +74,12 @@ function Products() {
         setFormKey(prev => prev + 1)
     }
 
-    const handleSave = (formData: ProductoForm) => {
+    const handleSave = (formData: WarehousesForm) => {
 
 
         if (selected) {
             const updated = data.map(p => p.id === selected.id ? { ...formData, id: selected.id } : p)
+
             setData(updated)
         } else {
             const newProduct = { ...formData, id: Date.now() }
@@ -91,27 +93,30 @@ function Products() {
         <div className="p-6">
             <div className="bg-white rounded-lg shadow p-6">
                 <div className="flex justify-between items-center mb-6">
-                    <h1 className="text-2xl font-bold text-gray-800">Lista de Productos</h1>
+                    <h1 className="text-2xl font-bold text-gray-800">Lista de Bodegas</h1>
                     <button
                         onClick={handleCreate}
                         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
-                    > + Crear producto</button>
+                    >
+                        + Crear bodega
+                    </button>
                 </div>
+
                 {showForm && (
-                    <ProductForm
-                        key={formKey}
-                        initialData={selected}
-                        onClose={() => setShowForm(false)}
-                        onSubmit={handleSave}
-                    />
+                    <div className="mb-6">
+                        <WarehouseForm
+                            key={formKey}
+                            initialData={selected}
+                            onClose={() => setShowForm(false)}
+                            onSubmit={handleSave}
+                        />
+                    </div>
                 )}
+
                 <Table columns={columns} data={data} />
             </div>
         </div>
     )
 }
 
-
-export default Products
-
-
+export default Warehouses

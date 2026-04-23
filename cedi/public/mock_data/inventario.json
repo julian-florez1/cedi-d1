@@ -1,17 +1,107 @@
 [
-  { "id": 1, "productoId": 1, "bodegaId": 1, "stock": 50, "stockMinimo": 20 },
-  { "id": 2, "productoId": 2, "bodegaId": 1, "stock": 40, "stockMinimo": 15 },
-  { "id": 3, "productoId": 3, "bodegaId": 2, "stock": 25, "stockMinimo": 10 },
-  { "id": 4, "productoId": 4, "bodegaId": 2, "stock": 60, "stockMinimo": 30 },
-  { "id": 5, "productoId": 5, "bodegaId": 3, "stock": 35, "stockMinimo": 20 },
-  { "id": 6, "productoId": 6, "bodegaId": 3, "stock": 20, "stockMinimo": 10 },
-  { "id": 7, "productoId": 7, "bodegaId": 4, "stock": 18, "stockMinimo": 8 },
-  { "id": 8, "productoId": 8, "bodegaId": 4, "stock": 22, "stockMinimo": 10 },
-  { "id": 9, "productoId": 9, "bodegaId": 5, "stock": 70, "stockMinimo": 30 },
-  { "id": 10, "productoId": 10, "bodegaId": 5, "stock": 45, "stockMinimo": 20 },
-  { "id": 11, "productoId": 11, "bodegaId": 6, "stock": 80, "stockMinimo": 40 },
-  { "id": 12, "productoId": 12, "bodegaId": 6, "stock": 30, "stockMinimo": 15 },
-  { "id": 13, "productoId": 13, "bodegaId": 7, "stock": 12, "stockMinimo": 10 },
-  { "id": 14, "productoId": 14, "bodegaId": 8, "stock": 55, "stockMinimo": 25 },
-  { "id": 15, "productoId": 15, "bodegaId": 9, "stock": 65, "stockMinimo": 30 }
+  {
+    "id": 1,
+    "producto": "Arroz blanco 1kg",
+    "bodega": "Bodega Central Bogotá",
+    "stock": 50,
+    "stockMinimo": 20
+  },
+  {
+    "id": 2,
+    "producto": "Azúcar refinada 1kg",
+    "bodega": "Bodega Central Bogotá",
+    "stock": 40,
+    "stockMinimo": 15
+  },
+  {
+    "id": 3,
+    "producto": "Aceite vegetal 1L",
+    "bodega": "Bodega Norte Bogotá",
+    "stock": 25,
+    "stockMinimo": 10
+  },
+  {
+    "id": 4,
+    "producto": "Leche entera 1L",
+    "bodega": "Bodega Norte Bogotá",
+    "stock": 60,
+    "stockMinimo": 30
+  },
+  {
+    "id": 5,
+    "producto": "Huevos x30",
+    "bodega": "Bodega Sur Bogotá",
+    "stock": 35,
+    "stockMinimo": 20
+  },
+  {
+    "id": 6,
+    "producto": "Pan tajado blanco",
+    "bodega": "Bodega Sur Bogotá",
+    "stock": 20,
+    "stockMinimo": 10
+  },
+  {
+    "id": 7,
+    "producto": "Café molido 500g",
+    "bodega": "Bodega Medellín Centro",
+    "stock": 18,
+    "stockMinimo": 8
+  },
+  {
+    "id": 8,
+    "producto": "Chocolate de mesa 250g",
+    "bodega": "Bodega Medellín Centro",
+    "stock": 22,
+    "stockMinimo": 10
+  },
+  {
+    "id": 9,
+    "producto": "Pasta espagueti 500g",
+    "bodega": "Bodega Cali Principal",
+    "stock": 70,
+    "stockMinimo": 30
+  },
+  {
+    "id": 10,
+    "producto": "Atún en lata 170g",
+    "bodega": "Bodega Cali Principal",
+    "stock": 45,
+    "stockMinimo": 20
+  },
+  {
+    "id": 11,
+    "producto": "Sal refinada 500g",
+    "bodega": "Bodega Barranquilla",
+    "stock": 80,
+    "stockMinimo": 40
+  },
+  {
+    "id": 12,
+    "producto": "Harina de trigo 1kg",
+    "bodega": "Bodega Barranquilla",
+    "stock": 30,
+    "stockMinimo": 15
+  },
+  {
+    "id": 13,
+    "producto": "Detergente en polvo 1kg",
+    "bodega": "Bodega Cartagena",
+    "stock": 12,
+    "stockMinimo": 10
+  },
+  {
+    "id": 14,
+    "producto": "Papel higiénico x4",
+    "bodega": "Bodega Bucaramanga",
+    "stock": 55,
+    "stockMinimo": 25
+  },
+  {
+    "id": 15,
+    "producto": "Galletas dulces 200g",
+    "bodega": "Bodega Pereira",
+    "stock": 65,
+    "stockMinimo": 30
+  }
 ]
