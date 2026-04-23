@@ -1,0 +1,106 @@
+[{
+    "id": 1,
+    "nombre": "Arroz blanco 1kg",
+    "precio": 3800,
+    "cantidad": 120,
+    "proveedor": "Proveedor Granos S.A.S."
+  },
+  {
+    "id": 2,
+    "nombre": "Azúcar refinada 1kg",
+    "precio": 3600,
+    "cantidad": 95,
+    "proveedor": "Proveedor Azúcar Ltda."
+  },
+  {
+    "id": 3,
+    "nombre": "Aceite vegetal 1L",
+    "precio": 9800,
+    "cantidad": 60,
+    "proveedor": "Aceites del Valle"
+  },
+  {
+    "id": 4,
+    "nombre": "Leche entera 1L",
+    "precio": 4200,
+    "cantidad": 150,
+    "proveedor": "Lácteos Nacionales"
+  },
+  {
+    "id": 5,
+    "nombre": "Huevos x30",
+    "precio": 14500,
+    "cantidad": 80,
+    "proveedor": "Avícola Central"
+  },
+  {
+    "id": 6,
+    "nombre": "Pan tajado blanco",
+    "precio": 5200,
+    "cantidad": 70,
+    "proveedor": "Panificadora Local"
+  },
+  {
+    "id": 7,
+    "nombre": "Café molido 500g",
+    "precio": 8900,
+    "cantidad": 55,
+    "proveedor": "Café Colombia S.A.S."
+  },
+  {
+    "id": 8,
+    "nombre": "Chocolate de mesa 250g",
+    "precio": 4500,
+    "cantidad": 65,
+    "proveedor": "Alimentos Tradicionales"
+  },
+  {
+    "id": 9,
+    "nombre": "Pasta espagueti 500g",
+    "precio": 2800,
+    "cantidad": 110,
+    "proveedor": "Molinos del País"
+  },
+  {
+    "id": 10,
+    "nombre": "Atún en lata 170g",
+    "precio": 5200,
+    "cantidad": 90,
+    "proveedor": "Pesquera del Pacífico"
+  },
+  {
+    "id": 11,
+    "nombre": "Sal refinada 500g",
+    "precio": 1500,
+    "cantidad": 140,
+    "proveedor": "Salinas S.A."
+  },
+  {
+    "id": 12,
+    "nombre": "Harina de trigo 1kg",
+    "precio": 4200,
+    "cantidad": 75,
+    "proveedor": "Molinos Andinos"
+  },
+  {
+    "id": 13,
+    "nombre": "Detergente en polvo 1kg",
+    "precio": 10500,
+    "cantidad": 50,
+    "proveedor": "Limpieza Hogar S.A.S."
+  },
+  {
+    "id": 14,
+    "nombre": "Papel higiénico x4",
+    "precio": 6200,
+    "cantidad": 85,
+    "proveedor": "Productos Familiares"
+  },
+  {
+    "id": 15,
+    "nombre": "Galletas dulces 200g",
+    "precio": 2800,
+    "cantidad": 100,
+    "proveedor": "Snacks Económicos"
+  }
+]
